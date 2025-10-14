@@ -1,0 +1,76 @@
+/* ===== Google Font Import - Comfortaa ===== */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* ===== Базові стилі ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+  background-color: #ffffff; /* можеш змінити на будь-який фон */
+  color: #333;
+}
+
+/* ===== Хедер ===== */
+header {
+  display: flex;
+  flex-direction: column;      /* ставимо елементи один під одним */
+  align-items: center;         /* центруємо по горизонталі */
+  justify-content: center;     /* і по вертикалі */
+  text-align: center;
+  padding: 80px 20px;          /* відступи зверху і з боків */
+}
+
+/* Головний заголовок */
+.header-title p {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #222;
+  margin-bottom: 20px;         /* відстань до підзаголовка */
+}
+
+/* Підзаголовок */
+.sub-header p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+  max-width: 800px;            /* щоб текст не розтягувався на весь екран */
+  line-height: 1.5;
+}
+
+
+/* ===== Сіра лінія після хедера ===== */
+.header-line {
+  width: 100%;
+  height: 2px;
+  background-color: #aeacac; /* світло-сіра */
+  margin-top: 20px;          /* відступ від хедера */
+}
+
+
+.main-links {
+  display: flex;
+  justify-content: center;   /* вирівнюємо по центру */
+  flex-wrap: wrap;           /* щоб адаптувалось до вузьких екранів */
+  list-style: none;          /* прибираємо кружечки */
+  padding: 0;
+  margin: 60px 0;            /* відступи зверху і знизу */
+  gap: 100px;                /* відстань між пунктами */
+}
+
+.main-links a {
+  text-decoration: none;     /* без підкреслення */
+  color: #000000;
+  font-size: 24px;           /* трохи більший текст, ніж у футері */
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.main-links a:hover {
+  color: #545454;
+  transform: scale(1.05);    /* легке збільшення при наведенні */
+}
