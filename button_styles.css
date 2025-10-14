@@ -1,30 +1,28 @@
 /* Базовий клас для ВСІХ кнопок */
 .button-base {
-    /* Скидання та загальний вигляд */
     border: none;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 3px;
     
     /* Текст */
-    color: rgb(255, 255, 255); /* Колір тексту білий для всіх */
+    color: rgb(255, 255, 255); 
     font-size: 1.6rem;
     font-weight: bold;
 
-    /* Ефекти та переходи */
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Спільні стани :active (застосовуються до всіх кнопок) */
 .button-base:active {
-    transform: translateY(1px); /* Ефект "втискання" спільний */
+    transform: translateY(1px); 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Модифікатор: Синя кнопка */
 .button-left {
-    background-color: #2983ea; /* Основний колір */
+    background-color: #2983ea; 
 }
 
 .button-left:hover {
@@ -34,7 +32,7 @@
 
 .button-left:active {
     background-color: rgb(7, 7, 93);
-    /* transform та box-shadow беремо з .btn-base:active */
+    
 }
 
 
@@ -50,7 +48,7 @@
 
 .button-center:active {
     background-color: rgb(93, 70, 7);
-    /* transform та box-shadow беремо з .btn-base:active */
+    
 }
 
 /* Модифікатор: Зелена кнопка */
@@ -65,14 +63,14 @@
 
 .button-right:active {
     background-color: rgb(17, 79, 65);
-    /* transform та box-shadow беремо з .btn-base:active */
+   
 }
 
 .button-group {
     display: flex;
-    width: 600px; /* Припустимо, що контейнер має фіксовану ширину */
-    height: 100px; /* Припустимо, що контейнер має фіксовану висоту */
-    border: 1px dashed #ccc; /* Для візуалізації */
+    width: 600px; 
+    height: 100px; 
+    border: 1px dashed #ccc; 
 
     /* 1. Горизонтальне вирівнювання: Центрування */
     justify-content: center; 
@@ -80,6 +78,6 @@
     /* 2. Вертикальне вирівнювання: Центрування */
     align-items: center; 
 
-    /* 3. Відстань між кнопками (Must-know: сучасна властивість Flexbox) */
+    /* 3. Відстань між кнопками  */
     gap: 20px; 
 }
