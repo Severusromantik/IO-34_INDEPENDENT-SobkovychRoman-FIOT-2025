@@ -59,8 +59,9 @@ header {
   list-style: none;          
   padding: 0;
   margin: 60px 0;            
-  gap: 100px;               
+  gap: 80px;               
 }
+
 
 .main-links a {
   text-decoration: none;     

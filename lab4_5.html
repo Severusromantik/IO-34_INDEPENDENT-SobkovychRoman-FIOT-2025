@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 4(5) - Транзакція дроїдів</title>
+    <link rel="stylesheet" href="lab4_5.css"> 
+</head>
+<body>
+    <h1>Завдання 5: Транзакція ремонтних дроїдів</h1>
+    
+    <p>Введіть дані транзакції (кількість, ціну та баланс) і натисніть "Оформити".</p>
+    
+    <hr>
+    
+    <div class="form-container">
+        <label for="quantity">Кількість дроїдів:</label>
+        <input type="number" id="quantity" placeholder="Наприклад: 5" value="5" min="1">
+        
+        <label for="pricePerDroid">Ціна за один дроїд (credits):</label>
+        <input type="number" id="pricePerDroid" placeholder="Наприклад: 100" value="100" min="0">
+        
+        <label for="customerCredits">Кредити на рахунку клієнта:</label>
+        <input type="number" id="customerCredits" placeholder="Наприклад: 600" value="600" min="0">
+        
+        <button id="makeTransactionButton">Оформити транзакцію</button>
+    </div>
+
+    <hr>
+
+    <h2>Результат транзакції:</h2>
+    <div id="results-container">
+        Введіть дані та натисніть кнопку...
+    </div>
+
+    <script src="lab4_5.js"></script>
+</body>
+</html>

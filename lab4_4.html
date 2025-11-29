@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 4(4) - Розрахунок доставки</title>
+    <link rel="stylesheet" href="lab4_4.css"> 
+</head>
+<body>
+    <h1>Завдання 4: Розрахунок доставки</h1>
+    
+    <p>Введіть дані про доставку нижче і натисніть "Розрахувати".</p>
+    
+    <hr>
+    
+    <div class="form-container">
+        <label for="country">Країна доставки:</label>
+        <input type="text" id="country" placeholder="Наприклад: Ukraine">
+        
+        <label for="price">Вартість товару:</label>
+        <input type="number" id="price" placeholder="Наприклад: 120" value="120">
+        
+        <label for="deliveryFee">Вартість доставки:</label>
+        <input type="number" id="deliveryFee" placeholder="Наприклад: 30" value="30">
+        
+        <button id="calculateButton">Розрахувати вартість</button>
+    </div>
+
+    <hr>
+
+    <h2>Результат:</h2>
+    <div id="results-container">
+        Натисніть кнопку, щоб побачити результат...
+    </div>
+
+    <script src="lab4_4.js"></script>
+</body>
+</html>

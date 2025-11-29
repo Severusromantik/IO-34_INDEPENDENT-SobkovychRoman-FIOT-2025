@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 4(6) - Обробка та обрізання масивів</title>
+    <link rel="stylesheet" href="lab4_6.css"> 
+</head>
+<body>
+    <h1>Завдання 6: Функція makeArray </h1>
+    
+    <p>Введіть елементи двох масивів (розділені комою) та максимальну дозволену довжину. </p>
+    
+    <hr>
+    
+    <div class="form-container">
+        <label for="firstArray">Елементи першого масиву (через кому):</label>
+        <input type="text" id="firstArray" placeholder="Наприклад: A, B, C" value="A, B, C">
+        
+        <label for="secondArray">Елементи другого масиву (через кому):</label>
+        <input type="text" id="secondArray" placeholder="Наприклад: X, Y, Z, W" value="X, Y, Z, W">
+        
+        <label for="maxLength">Максимальна довжина (maxLength):</label>
+        <input type="number" id="maxLength" placeholder="Наприклад: 5" value="5" min="0">
+        
+        <button id="processArrayButton">Обробка масивів</button>
+    </div>
+
+    <hr>
+
+    <h2>Результат:</h2>
+    <div id="results-container">
+        Введіть дані та натисніть кнопку...
+    </div>
+
+    <script src="lab4_6.js"></script>
+</body>
+</html>
