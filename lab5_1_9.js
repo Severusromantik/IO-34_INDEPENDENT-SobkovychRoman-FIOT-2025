@@ -46,4 +46,3 @@ const tagFrequencies = countTags(tweets);
 console.log("\n--- Об'єкт з кількістю кожного тега ---");
 console.log(tagFrequencies); 
 
-// Очікуваний результат: {js: 3, nodejs: 3, html: 2, css: 2, react: 2}

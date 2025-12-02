@@ -4,7 +4,7 @@
  * @returns {Array<Object>} Новий масив об'єктів з властивостями { id, name, price (зі знижкою) }.
  */
 const applyDiscountAndAddId = (productsArray) => {
-    // Коефіцієнт знижки 20% - це 0.8 (1.0 - 0.2)
+    // Коефіцієнт знижки
     const discountFactor = 0.8;
     
     // Використовуємо map() для перетворення кожного об'єкта в новий масив
@@ -43,8 +43,3 @@ const discountedFruits = applyDiscountAndAddId(fruits);
 
 console.log("\n--- Новий масив (ID додано, знижка 20% застосована) ---");
 console.log(discountedFruits);
-
-// Приклад перевірки розрахунку:
-// Apple: 200 * 0.8 = 160
-// Orange: 300 * 0.8 = 240
-// Grapes: 750 * 0.8 = 600

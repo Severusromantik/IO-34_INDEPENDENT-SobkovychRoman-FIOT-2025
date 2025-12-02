@@ -1,6 +1,6 @@
 /**
  * Клас Calculator, який дозволяє виконувати послідовні арифметичні
- * операції над числом, підтримуючи ланцюжковий виклик (Method Chaining).
+ * операції над числом
  */
 class Calculator {
     // Приватне поле для зберігання поточного результату
@@ -15,8 +15,6 @@ class Calculator {
 
     /**
      * Встановлює початкове значення для обчислень.
-     * @param {number} value - Початкове число.
-     * @returns {Calculator} Сам об'єкт (this) для ланцюжкового виклику.
      */
     number(value) {
         if (typeof value !== 'number') {
@@ -28,8 +26,6 @@ class Calculator {
 
     /**
      * Додає value до поточного значення.
-     * @param {number} value - Число, яке потрібно додати.
-     * @returns {Calculator} Сам об'єкт (this).
      */
     add(value) {
         if (typeof value !== 'number') {
@@ -41,8 +37,6 @@ class Calculator {
 
     /**
      * Віднімає value від поточного значення.
-     * @param {number} value - Число, яке потрібно відняти.
-     * @returns {Calculator} Сам об'єкт (this).
      */
     subtract(value) {
         if (typeof value !== 'number') {
@@ -54,8 +48,6 @@ class Calculator {
 
     /**
      * Множить поточне значення на value.
-     * @param {number} value - Число, на яке потрібно помножити.
-     * @returns {Calculator} Сам об'єкт (this).
      */
     multiply(value) {
         if (typeof value !== 'number') {
@@ -67,9 +59,6 @@ class Calculator {
 
     /**
      * Ділить поточне значення на value.
-     * @param {number} value - Число, на яке потрібно поділити.
-     * @returns {Calculator} Сам об'єкт (this).
-     * @throws {Error} Якщо value дорівнює 0.
      */
     divide(value) {
         if (typeof value !== 'number') {
@@ -84,16 +73,12 @@ class Calculator {
 
     /**
      * Повертає поточний результат усіх операцій.
-     * @returns {number} Поточний результат.
      */
     getResult() {
         return this.#result;
     }
 }
 
-// ----------------------------------------------------------------------
-// Приклад використання
-// ----------------------------------------------------------------------
 
 const calc = new Calculator();
 

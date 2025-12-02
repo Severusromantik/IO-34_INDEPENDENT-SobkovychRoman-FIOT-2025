@@ -27,7 +27,7 @@ const checkBrackets = (str) => {
         
         // 3.2. Якщо символ є ЗАКРИВАЮЧОЮ дужкою
         else if (Object.values(map).includes(char)) {
-            // Перевіряємо, чи Стек порожній. Якщо так, то закриваюча дужка не має пари.
+            // Перевіряємо, чи Стек порожній. 
             if (stack.length === 0) {
                 return false; // Помилка: немає відповідної відкритої дужки
             }
@@ -36,12 +36,11 @@ const checkBrackets = (str) => {
             const lastOpenBracket = stack.pop(); 
             
             // Перевіряємо, чи дістана відкрита дужка відповідає поточній закритій дужці
-            // Тобто, чи map[lastOpenBracket] === char
             if (map[lastOpenBracket] !== char) {
                 return false; // Помилка: неправильний тип закритої дужки
             }
         }
-        // Ігноруємо всі інші символи (літери, цифри, пробіли тощо)
+        
     }
 
     // 4. Фінальна перевірка
@@ -50,20 +49,17 @@ const checkBrackets = (str) => {
     return stack.length === 0;
 };
 
-// ----------------------------------------------------------------------
-// Приклади використання
-// ----------------------------------------------------------------------
 
 console.log("--- Перевірка коректних рядків ---");
-console.log(`({})[]: ${checkBrackets("({})[]")}`);           // Очікується: true
-console.log(`(a + b) * {c[d]}: ${checkBrackets("(a + b) * {c[d]}")}`); // Очікується: true
-console.log(`function fn() { return true; }: ${checkBrackets("function fn() { return true; }")}`); // Очікується: true
-console.log(`[]{}(): ${checkBrackets("[]{}(())")}`);        // Очікується: true
+console.log(`({})[]: ${checkBrackets("({})[]")}`);         
+console.log(`(a + b) * {c[d]}: ${checkBrackets("(a + b) * {c[d]}")}`); 
+console.log(`function fn() { return true; }: ${checkBrackets("function fn() { return true; }")}`);
+console.log(`[]{}(): ${checkBrackets("[]{}(())")}`);        
 
 
 console.log("\n--- Перевірка некоректних рядків ---");
-console.log(`([]: ${checkBrackets("([]")}`);             // Очікується: false (не закрита кругла)
-console.log(`{[)}: ${checkBrackets("{[)}")}`);           // Очікується: false (неправильна послідовність)
-console.log(`))}: ${checkBrackets("))")}`);              // Очікується: false (закриваюча без пари)
-console.log(`{}: ${checkBrackets("{")}`);                // Очікується: false (не закрита фігурна)
-console.log(`[a]b(c{d}: ${checkBrackets("[a]b(c{d")}`);  // Очікується: false (не закриті кругла і фігурна)
+console.log(`([]: ${checkBrackets("([]")}`);             
+console.log(`{[)}: ${checkBrackets("{[)}")}`);           
+console.log(`))}: ${checkBrackets("))")}`);             
+console.log(`{}: ${checkBrackets("{")}`);                
+console.log(`[a]b(c{d}: ${checkBrackets("[a]b(c{d")}`);  

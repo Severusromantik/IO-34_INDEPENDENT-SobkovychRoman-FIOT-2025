@@ -8,10 +8,6 @@ const medicines = {
 };
 
 // Встановлюємо поточну дату для порівняння
-// Оскільки ми не можемо гарантувати, коли користувач запустить код, 
-// для відтворення результату використовуємо фіксовану дату (Наприклад, 1 грудня 2025 року)
-// Якщо потрібно використовувати актуальну поточну дату, замість цього використовуйте new Date()
-const currentDate = new Date("2025-12-01"); 
 console.log(`Поточна дата для порівняння: ${currentDate.toLocaleDateString('uk-UA')}`);
 console.log("---------------------------------------------------------");
 
@@ -19,15 +15,12 @@ console.log("---------------------------------------------------------");
 // Використовуємо Object.entries() для перетворення об'єкта на масив пар [назва, дата]
 const validMedicines = Object.entries(medicines)
     // 2. Фільтрація: залишаємо лише ті, термін зберігання яких ще не пройшов
-    // [name, expiryDate] => expiryDate.getTime() > currentDate.getTime()
     .filter(([name, expiryDate]) => expiryDate.getTime() > currentDate.getTime())
     
     // 3. Сортування: сортуємо за датою придатності у хронологічному порядку (від найближчої до найвіддаленішої)
-    // [name1, date1], [name2, date2] => date1 - date2
     .sort(([name1, date1], [name2, date2]) => date1.getTime() - date2.getTime())
 
     // 4. Мапування: отримуємо масив лише назв препаратів
-    // [name, expiryDate] => name
     .map(([name, expiryDate]) => name);
 
 // Виведення результату

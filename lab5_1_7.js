@@ -58,11 +58,8 @@ class Client {
     }
 }
 
-// ----------------------------------------------------------------------
-// Приклади використання
-// ----------------------------------------------------------------------
 
-const user1 = new Client("user_ivan", "ivan@example.com");
+const user1 = new Client("user_one", "one@example.com");
 
 console.log("\n--- Інформація про Клієнта 1 (через публічний метод) ---");
 console.log(user1.getClientInfo());
@@ -72,8 +69,8 @@ console.log(`Логін: ${user1.login}`); // Викликає геттер logi
 console.log(`Email: ${user1.email}`); // Викликає геттер email()
 
 console.log("\n--- Зміна властивостей через Сеттери ---");
-user1.login = "new_ivan_login"; // Викликає сеттер login(newLogin)
-user1.email = "ivan.new@corp.com"; // Викликає сеттер email(newEmail)
+user1.login = "new_login"; // Викликає сеттер login(newLogin)
+user1.email = "newlogin.new@corp.com"; // Викликає сеттер email(newEmail)
 
 console.log(`Новий логін (після зміни): ${user1.login}`);
 console.log(`Новий email (після зміни): ${user1.email}`);

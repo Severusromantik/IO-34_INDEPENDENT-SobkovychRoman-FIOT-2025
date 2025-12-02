@@ -1,11 +1,5 @@
-/**
- * Перевіряє, чи є кожен елемент масиву парним числом.
- * @param {Array<number>} arr - Масив чисел.
- * @returns {boolean} true, якщо всі елементи парні, інакше false.
- */
 const checkAllEven = (arr) => {
     // Використовуємо метод every() для перевірки всіх елементів.
-    // Умова парності: число % 2 === 0
     const isEveryElementEven = arr.every(number => {
         return number % 2 === 0;
     });
