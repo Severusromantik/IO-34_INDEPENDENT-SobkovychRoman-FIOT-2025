@@ -6,6 +6,7 @@ const medicines = {
     Аспірин: new Date("2022-08-15"),
     Аспаркам: new Date("2024-04-18"),
 };
+const currentDate = new Date();
 
 // Встановлюємо поточну дату для порівняння
 console.log(`Поточна дата для порівняння: ${currentDate.toLocaleDateString('uk-UA')}`);
