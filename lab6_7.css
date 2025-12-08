@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#categories {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.item h2 {
+    color: #28a745;
+    margin-top: 0;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 5px;
+}
+
+.item ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}

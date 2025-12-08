@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Забезпечує, що body займає всю висоту вікна */
+    transition: background-color 0.5s ease; /* Плавний перехід кольору */
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.widget {
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.widget p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.color {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.change-color {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.change-color:hover {
+    background-color: #1e7e34;
+}
