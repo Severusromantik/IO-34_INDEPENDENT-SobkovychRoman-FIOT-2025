@@ -1,5 +1,4 @@
 // 1. Отримуємо посилання на елементи DOM
-// const textElement = document.getElementById('mainText'); // Цей елемент тепер не чіпаємо!
 const inputField = document.getElementById('secretInput');
 const toggleButton = document.getElementById('toggleBtn');
 
@@ -14,24 +13,20 @@ function handleToggle() {
     isHidden = !isHidden; 
 
     if (isHidden) {
-        // --- РЕЖИМ ПРИХОВАТИ ---
-        
-        // 2.1. Зміна типу поля введення на 'password'
+        // Зміна типу поля введення на 'password'
         // Введена інформація стає зірочками
         inputField.type = 'password'; 
         
-        // 2.2. Зміна кнопки
+        // Зміна кнопки
         toggleButton.textContent = 'Розкрити';
         // Додаємо клас або атрибут для стилізації, якщо потрібно
         toggleButton.setAttribute('data-state', 'hidden'); 
         
     } else {
-        // --- РЕЖИМ РОЗКРИТИ ---
-        
-        // 2.1. Зміна типу поля введення назад на 'text'
+        // Зміна типу поля введення назад на 'text'
         inputField.type = 'text'; // Введена інформація стає видимою
 
-        // 2.2. Зміна кнопки
+        // Зміна кнопки
         toggleButton.textContent = 'Приховати';
         toggleButton.removeAttribute('data-state'); 
     }

@@ -5,8 +5,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Забезпечує, що body займає всю висоту вікна */
-    transition: background-color 0.5s ease; /* Плавний перехід кольору */
+    min-height: 100vh; 
+    transition: background-color 0.5s ease; 
 }
 
 h1 {

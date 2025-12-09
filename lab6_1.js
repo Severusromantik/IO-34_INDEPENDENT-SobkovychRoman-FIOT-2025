@@ -16,9 +16,6 @@ function handleShowMeClick() {
     console.log(inputValue);
     console.log("-----------------------------------------");
 
-    // Додатково: виводимо повідомлення на сторінці
-    document.getElementById('outputMessage').textContent = 
-        `Вивід у консоль: "${inputValue}"`;
 }
 
 // 4. Встановлюємо слухач події (Event Listener) на кнопку

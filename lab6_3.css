@@ -45,7 +45,7 @@ h1 {
 
 /* Стиль для кнопки у режимі "Розкрити" */
 #toggleBtn[data-state="hidden"] {
-    background-color: #dc3545; /* Червоний колір */
+    background-color: #dc3545; 
 }
 
 #toggleBtn[data-state="hidden"]:hover {

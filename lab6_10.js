@@ -22,13 +22,13 @@ function getRandomHexColor() {
    * @param {number} amount - Кількість елементів для рендеру.
    */
   function createBoxes(amount) {
-      // 1. Очищуємо стару колекцію перед створенням нової
+      // Очищуємо стару колекцію перед створенням нової
       destroyBoxes(); 
   
       const fragment = document.createDocumentFragment();
       let currentSize = INITIAL_SIZE;
       
-      // 2. Створюємо елементи у циклі
+      // Створюємо елементи у циклі
       for (let i = 0; i < amount; i++) {
           const box = document.createElement('div');
           
@@ -46,7 +46,7 @@ function getRandomHexColor() {
           currentSize += SIZE_INCREMENT;
       }
   
-      // 3. Додаємо всі елементи з фрагмента в DOM за один раз (для оптимізації)
+      // Додаємо всі елементи з фрагмента в DOM за один раз (для оптимізації)
       boxesContainer.appendChild(fragment);
   }
   
@@ -67,10 +67,10 @@ function getRandomHexColor() {
       // Валідація: перевіряємо, чи значення в межах від 1 до 100
       if (amount >= 1 && amount <= 100) {
           
-          // 1. Рендеримо колекцію
+          // Рендеримо колекцію
           createBoxes(amount);
           
-          // 2. Очищаємо значення в інпуті
+          // Очищаємо значення в інпуті
           input.value = '';
           
       } else {
@@ -79,7 +79,7 @@ function getRandomHexColor() {
       }
   }
   
-  // 3. Додаємо слухачі подій
+  // Додаємо слухачі подій
   createButton.addEventListener('click', handleCreateClick);
   destroyButton.addEventListener('click', destroyBoxes);
   
